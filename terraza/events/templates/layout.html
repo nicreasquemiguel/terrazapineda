@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Terraza Pineda</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <script src="https://kit.fontawesome.com/08626bfbba.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class=" sticky-top">
+            <nav class="sticky-top">
+                <div class="logo-container justify-content-center">
+                    <label class="logo-txt">Terraza Pineda</label>
+                     
+                    <img class="logo" src="https://static.wixstatic.com/media/adea60_48305b82701e41f9bb2432b0e544d28d~mv2.png/v1/fill/w_142,h_159,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/terrazapineda%20logo%20blanco.png" width="30px">
+
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="hb_btn">
+                    <i class="fas fa-bars"> </i>
+                </label>
+                <ul class="nav-list sticky-top">
+                    <li><a class ="active" href="#">Inicio</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Reglamento</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Como Llegar</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1>Section 1</h1>
+        </section>
+        <section>
+            <h1>Section 2</h1>
+        </section>
+        <section>
+            <h1>Section 4</h1>
+        </section>
+        <div  class="demo">
+            <h1>
+                TERRAZA PINEDA
+            </h1>
+            <p>Celebra con nosotros!</p>
+        </div>
+
+        <div class="container w-75 text-center">
+            <div class="row">
+
+            <div class="col card viernes fecha">
+                <h2>Octubre</h2>
+                <h1>26</h1>
+            </div>
+            <div class="sabado card fecha col  ">
+                <h2>Octubre</h2>
+                <h1>27</h1>
+            </div>
+            <div class="domingo card fecha  col  ">
+                <h2>Octubre</h2>
+                <h1>28</h1>
+            </div>
+        </div>
+    </div>
+        <div class="calendar">
+            <div class="dates">
+
+                <div class="time">
+                    <span>Hoy</span>
+                    <h2>Esta semana</h2>
+                </div>
+                <div class="week">
+                    <ul>
+                        <li>Lun</li>
+                        <li>Mar</li>
+                        <li>Mie</li>
+                        <li>Jue</li>
+                        <li>Vie</li>
+                        <li>Sab</li>
+                        <li>Dom</li>
+
+                    </ul>
+                </div>
+                <div class="days">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li class="active">5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                    </ul>
+                </div>
+                <div class="current-data">
+                    26 de Sebtiembre 2022
+                </div>            
+            </div>
+            <div class="events">
+                <div class="profile">
+                    <img src="http://pixeltime.ro/profile.jpg">
+
+                </div>
+                <div class="title">
+                    Evento de Hoy
+                </div>
+                <ul>
+                    <li>Evento de Miguel</li>
+                    <li>6:00pm</li>
+                    <li>100 personas</li>
+                </ul>
+            </div>
+        </div>
+        <div  class="container-fluid p-0 m-0">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
